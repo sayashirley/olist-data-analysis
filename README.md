@@ -11,3 +11,6 @@ Olist´s database structure as seen below consists of nine tables: customers, or
 ## Insights Deep Dive
 
 ## Recommendations
+
+## Sources 
+Region mapping is based on [ISO](https://www.iso.org/obp/ui/#iso:code:3166:BR) 
