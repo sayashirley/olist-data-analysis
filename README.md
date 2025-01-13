@@ -9,8 +9,7 @@ Olist´s database structure as seen below consists of nine tables: **customers**
   <em>Figure 1: Entity Relationship Diagram showing table relationships in the dataset.</em>
 </p>
 
-### Data Description
-
+  
 - `customers`:  
 This dataset includes information about the customer, such as their location and unique customer ID. The latter allows us to identify returning customers.  
 
