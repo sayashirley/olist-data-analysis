@@ -1,4 +1,4 @@
-```
+```sql
 SELECT 
   o.seller_id,
   COUNT(*) AS order_count,
