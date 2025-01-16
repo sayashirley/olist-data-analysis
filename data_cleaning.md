@@ -19,7 +19,7 @@
 
 ### Missing Values and Duplicates
 
-The table below lists the key fields for each dataset, which were used to adapt the general SQL query for checking duplicates and missing values:
+This table lists the key fields for each dataset, which were used to adapt the SQL query below for checking duplicates and missing values:
 
 <div align="center">
   
@@ -44,7 +44,7 @@ FROM table_name;
 
 ### Logical Timestamp Validation
 
-Verified that all date fields follow a logical order (e.g. `order_purchase_timestamp` ≤ `order_approved_at` ≤ `order_delivered_carrier_date` ≤ `ordered_delivery_customer_date`) for `delivered` orders:
+Verified that all date fields follow a logical order (e.g. `order_purchase_timestamp` ≤ `order_approved_at` ≤ `order_delivered_carrier_date` ≤ `ordered_delivered_customer_date`) for `delivered` orders:
 
 ```sql
 SELECT
@@ -83,7 +83,7 @@ SELECT
 FROM
   order_items
 WHERE
-  price <0 OR freight_value <0;
+  price < 0 OR freight_value < 0;
 ```
   
 > **Result**: No negative values found.
@@ -158,8 +158,8 @@ WHERE
     - 23 rows where `order_delivered_carrier_date > order_delivered_customer_date`.
   
   - Actions Taken:
-    - Rows where `order_approved_at > order_delivered_carrier_date` were flagged.
     - Rows where `order_delivered_carrier_date > order_delivered_customer_date` were removed.
+    - Rows where `order_approved_at > order_delivered_carrier_date` were flagged for further analysis.
 
 ```sql
 DELETE FROM
@@ -171,11 +171,30 @@ WHERE
 
 > **Result**: 23 rows were removed from `orders`.
 
+```sql
+-- Add a boolean column to flag rows.  
+ALTER TABLE orders
+  ADD COLUMN is_flagged BOOLEAN;
+
+-- Set the conditions for when it is true.
+UPDATE orders
+SET is_flagged = TRUE
+WHERE order_approved_at > order_delivered_carrier_date
+  AND order_status = 'delivered';
+
+-- Set the conditions for when it is false.
+UPDATE orders
+SET is_flagged = FALSE
+WHERE is_flagged IS NULL;
+```
+
+> **Result**: 1,350 rows were flagged.
+
 ## 5. Final Cleaned Dataset
 
 - **Size**:  
   - `customers`: 99,441 rows and 5 columns  
-  - `orders`: 99,441 rows and 8 columns  
+  - `orders`: 99,409 rows and 9 columns
   - `order_items`: 112,650 rows and 7 columns  
   - `order_payments`: 103,886 rows and 5 columns  
   - `order_reviews`: 99,224 rows and 7 columns  
@@ -184,4 +203,6 @@ WHERE
   - `geolocation`: 1,000,163 rows and 5 columns  
   - `product_category_name_translation`: 71 rows and 2 columns
  
-- **Key changes**: [List of major changes made]
+- **Key changes**:
+  - Removed a total of 32 rows from `orders` dataset, reducing the number of rows by 0.032%.
+  - Added a column in `orders` to identify flagged rows where inconsistent timestamps are present.
