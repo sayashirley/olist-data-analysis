@@ -37,7 +37,8 @@ SELECT
   COUNT(*) AS total_rows,
   COUNT(DISTINCT key_field) AS distinct_values,
   SUM(CASE WHEN key_field IS NULL THEN 1 ELSE 0 END) AS missing_values
-FROM table_name;
+FROM
+  table_name;
 ```
 
 > **Result**: No missing values or duplicates were found in the key fields.
@@ -204,5 +205,6 @@ WHERE is_flagged IS NULL;
   - `product_category_name_translation`: 71 rows and 2 columns
  
 - **Key changes**:
-  - Removed a total of 32 rows from `orders` dataset, reducing the number of rows by 0.032%.
-  - Added a column in `orders` to identify flagged rows where inconsistent timestamps are present.
+  - Removed a total of 32 rows from the `orders` dataset where the timestamps of Carrier Delivery Date and Customer Delivery Date were in reverse chronological order. These rows were omitted to ensure data quality for a delivery performance analysis. This reduced the total row count of the dataset by 0.032%.
+    
+  - Added a column in the `orders` dataset to flag rows with inconsistent timestamps where the Order Approval Date is later than the Carrier Delivery Date. These inconsistencies are less severe, allowing flagged rows to be retained but excluded during analysis if necessary, ensuring the integrity of analytical results.
