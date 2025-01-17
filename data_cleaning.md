@@ -195,7 +195,7 @@ WHERE is_flagged IS NULL;
 
 - **Size**:  
   - `customers`: 99,441 rows and 5 columns  
-  - `orders`: 99,409 rows and 9 columns
+  - `orders_cleaned`: 99,409 rows and 9 columns
   - `order_items`: 112,650 rows and 7 columns  
   - `order_payments`: 103,886 rows and 5 columns  
   - `order_reviews`: 99,224 rows and 7 columns  
@@ -208,3 +208,5 @@ WHERE is_flagged IS NULL;
   - Removed a total of 32 rows from the `orders` dataset where the timestamps of Carrier Delivery Date and Customer Delivery Date were in reverse chronological order. These rows were omitted to ensure data quality for a delivery performance analysis. This reduced the total row count of the dataset by 0.032%.
     
   - Added a column in the `orders` dataset to flag rows with inconsistent timestamps where the Order Approval Date is later than the Carrier Delivery Date. These inconsistencies are less severe, allowing flagged rows to be retained but excluded during analysis if necessary, ensuring the integrity of analytical results.
+ 
+  - Cleaned `orders` dataset saved as `orders_cleaned`.
