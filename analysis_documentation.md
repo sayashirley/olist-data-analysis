@@ -1,3 +1,24 @@
+# Analysis Documentation
+
+## Top- Selling Product Category of 2016-2018
+
+### 1. Problem Statement
+
+What are the top-selling product categories for each year between 2016-2018? This analysis will help identify key product categories that contribute the most to revenue, providing insights for inventory planning and promotional strategies.
+
+### 2. Datasets
+- `orders_cleaned`
+- `order_items`
+- `products`
+- `product_category_name_translation`
+
+### 3. Methodology
+
+### 4. Results
+
+### 5. Visualisation
+
+
 ```sql
 SELECT 
   o.seller_id,
