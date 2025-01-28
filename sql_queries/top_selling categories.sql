@@ -41,7 +41,7 @@ FROM (
   ) AS subq1 
 ) AS subq2
 WHERE
-  top_selling <= 3
+  top_selling <= 10
 ORDER BY
   year ASC,
   total_orders DESC;
