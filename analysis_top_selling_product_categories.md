@@ -91,3 +91,9 @@ Category names in the dataset were originally formatted as `furniture_decor`, `h
   <br>
   <em>Figure 4: Top 10 Product Categories by Revenue in 2018</em>
 </p>
+
+<p align="center">
+  <img src="visuals/rank_changes.png" alt="Top 10 Product Categories: Rank Changes (2016-2018)" width="650">
+  <br>
+  <em>Figure 5: Top 10 Product Categories: Rank Changes (2016-2018)</em>
+</p>
