@@ -74,30 +74,8 @@ Category names in the dataset were originally formatted as `furniture_decor`, `h
 
 ## 5. Visualisation
 
-
-```sql
-SELECT 
-  o.seller_id,
-  COUNT(*) AS order_count,
-  s.seller_zip_code_prefix,
-  EXTRACT(YEAR FROM o.shipping_limit_date) AS Year,
-  EXTRACT(MONTH FROM o.shipping_limit_date) AS Month,
-  o.price
-FROM 
-  `olist.order_items` AS o
-JOIN 
-  `olist.sellers` AS s
-  ON o.seller_id = s.seller_id
-WHERE 
-  o.product_id ='8e1446d14972eb9ba34dd6273315f419'
-GROUP BY
-  o.seller_id,
-  s.seller_zip_code_prefix,
-  Year,
-  Month,
-  o.price
-ORDER BY
-  seller_id,
-  Year,
-  Month
-```
+<p align="center">
+  <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650">
+  <br>
+  <em>Figure 2: Top 10 Product Categories by Revenue in 2016</em>
+</p>
