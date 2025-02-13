@@ -55,7 +55,7 @@ The main query combines the results from the subqueries to produce a final list 
 ## 4. Results
 
 <p align="center">
-  <img src="visuals/top_selling_category.png" alt="Top Selling Product Categories (2016-2018)" width="750">
+  <img src="visuals/top_selling_categories.png" alt="Top Selling Product Categories (2016-2018)" width="650">
   <br>
   <em>Figure 1: Top Selling Product Categories per Year (2016-2018)</em>
 </p>
@@ -78,4 +78,16 @@ Category names in the dataset were originally formatted as `furniture_decor`, `h
   <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650">
   <br>
   <em>Figure 2: Top 10 Product Categories by Revenue in 2016</em>
+</p>
+
+<p align="center">
+  <img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650">
+  <br>
+  <em>Figure 3: Top 10 Product Categories by Revenue in 2017</em>
+</p>
+
+<p align="center">
+  <img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650">
+  <br>
+  <em>Figure 4: Top 10 Product Categories by Revenue in 2018</em>
 </p>
