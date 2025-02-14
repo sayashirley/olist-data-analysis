@@ -54,10 +54,13 @@ The main query combines the results from the subqueries to produce a final list 
 
 ## 4. Results
 
+The query returned a table with the top 10 product categories which generated the highest revenue for each year between 2016 and 2018 respectively. *(see Figure 1 in Section 5: Visualisations)*
+Using this table, bar charts were created for each year *(see Figure 2.0-2.2 in Section 5: Visualisations)*, as well as the following ribbon chart visualising the product category rank changes and trends. 
+
 <p align="center">
-  <img src="visuals/top_selling_categories.png" alt="Top Selling Product Categories (2016-2018)" width="650">
+  <img src="visuals/rank_changes.png" alt="Top 10 Product Categories: Rank Changes (2016-2018)" width="650">
   <br>
-  <em>Figure 1: Top Selling Product Categories per Year (2016-2018)</em>
+  <em>Figure 3: Top 10 Product Categories: Rank Changes (2016-2018)</em>
 </p>
 
 The analysis revealed the following top-selling product categories:
@@ -74,26 +77,25 @@ Category names in the dataset were originally formatted as `furniture_decor`, `h
 
 ## 5. Visualisation
 
-<p align="center">
-  <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650">
-  <br>
-  <em>Figure 2: Top 10 Product Categories by Revenue in 2016</em>
-</p>
+<div style="text-align: center;">
+    <img src="visuals/top_selling_categories.png" alt="Top Selling Product Categories per Year (2016-2018)" width="650"/>
+    <p style="margin-top: 5px; font-style: italic;">Figure 1: Top Selling Product Categories per Year (2016-2018)</p>
+</div>
 
-<p align="center">
-  <img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650">
-  <br>
-  <em>Figure 3: Top 10 Product Categories by Revenue in 2017</em>
-</p>
+<div style="margin-bottom: 30px;"></div>
 
-<p align="center">
-  <img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650">
-  <br>
-  <em>Figure 4: Top 10 Product Categories by Revenue in 2018</em>
-</p>
+<div style="text-align: center;">
+    <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650"/>
+    <p style="margin-top: 5px; font-style: italic;">Figure 2.0: Top 10 Product Categories by Revenue in 2016</p>
+</div>
 
-<p align="center">
-  <img src="visuals/rank_changes.png" alt="Top 10 Product Categories: Rank Changes (2016-2018)" width="650">
-  <br>
-  <em>Figure 5: Top 10 Product Categories: Rank Changes (2016-2018)</em>
-</p>
+<div style="margin-bottom: 30px;"></div>
+
+
+<img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650">
+<em>Figure 2.1: Top 10 Product Categories by Revenue in 2017
+<br>
+
+<img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650">
+<em>Figure 2.2: Top 10 Product Categories by Revenue in 2018
+<br>
