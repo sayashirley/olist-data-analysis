@@ -81,21 +81,18 @@ Category names in the dataset were originally formatted as `furniture_decor`, `h
     <img src="visuals/top_selling_categories.png" alt="Top Selling Product Categories per Year (2016-2018)" width="650"/>
     <p style="margin-top: 5px; font-style: italic;">Figure 1: Top Selling Product Categories per Year (2016-2018)</p>
 </div>
-
-<div style="margin-bottom: 30px;"></div>
+<br>
 
 <div style="text-align: center;">
     <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650"/>
     <p style="margin-top: 5px; font-style: italic;">Figure 2.0: Top 10 Product Categories by Revenue in 2016</p>
 </div>
-
-<div style="margin-bottom: 30px;"></div>
-
+<br>
 
 <img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650">
 <em>Figure 2.1: Top 10 Product Categories by Revenue in 2017
 <br>
 
-<img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650">
+<img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650">  
 <em>Figure 2.2: Top 10 Product Categories by Revenue in 2018
 <br>
