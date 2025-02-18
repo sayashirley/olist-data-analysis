@@ -16,7 +16,7 @@ Olist´s database structure consists of the following nine tables:
 
 - `order_items`: This dataset includes information about the items purchased within each order, such as item price and freight value. This allows us to calculate total order and freight value.
 
-- `order_payments`:  
+- `order_payments`: 
 This dataset includes information about the payment options for each order, such as method of payment, transaction value and number of installments chosen by the customer.
 
 - `order_reviews`: 
