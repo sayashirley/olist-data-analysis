@@ -12,45 +12,49 @@ What are the top-selling product categories for each year between 2016-2018? Thi
 
 ## 3. Methodology
 
-### Subquery 1: Extracting Year and Calculating Total Orders per Category
+### CTE 1: Calculating Revenue per Category by Year
 
-In the first subquery, I aggregated the total number of orders for each product category, grouped by year. The key steps in this subquery include:
+A **Common Table Expression (CTE)** named `revenue_data` was created to calculate the total revenue per product category for each year. The key steps in this process include:
 
 1. **Extracting Year**:
 
-    Extracted the year from the `order_purchase_timestamp` in the `orders_cleaned` dataset.
+    Extracted the **year** from the `order_purchase_timestamp` in the `orders_cleaned` dataset.
 
 2. **Connecting Datasets**:
 
-    - Connected the `orders_cleaned` dataset with the `order_items` dataset to retrieve order details.
+    - The `orders_cleaned` dataset was joined with `order_items` to retrieve order details, including product prices and freight costs.
     
-    - Linked the `order_items` dataset with the `products` dataset to obtain category names.
+    - The `order_items` dataset was then linked to `products` to obtain category names.
     
-    - Mapped the `products` dataset to the `product_category_name_translation` dataset to translate product categories from Portuguese to English.
+    - The `products` dataset was mapped to `product_category_name_translation` to convert Portuguese product category names to English.
 
-3. **Filtering for Delivered Orders**:
+3. **Calculating Total Revenue**:
 
-    Filtered the data to include only delivered orders.
+    Revenue was calculated as the **sum of product price and freight value** for each product category within a given year.
 
-4. **Aggregating Orders by Product Category**:
+### CTE 2: Ranking Product Categories by Revenue
 
-    Counted the total number of orders for each product category per year.
+A second CTE, `ranked_data`, was created to rank product categories based on total revenue. This step involved:
 
-### Subquery 2: Ranking Top-Selling Categories
+1. **Applying the Ranking Function**:
 
-The results from Subquery 1 were used to rank product categories within each year based on the total number of orders. The key steps in this subquery include:
+    The `RANK()` window function was used to assign a rank to each product category within each year, ordering them by revenue in **descending order**.
 
-1. **Ranking**:
+2. **Rounding Revenue Values**:
 
-    Ranked product categories for each year in descending order of total orders.
+    Revenue values were rounded to the nearest whole number (`INT64`) for clarity.
 
-2. **Filtering for Top 3 Categories**:
+### Main Query: Filtering the Top 10 Categories
 
-    Selected only the top three categories for each year.
+The final query retrieved the **top 10 product categories per year** based on revenue. The key steps include:
 
-### Main Query: Combining Results
+1. **Filtering by Rank**:
 
-The main query combines the results from the subqueries to produce a final list of the top-selling product categories for each year. The results are presented in descending order of total orders for better visibility of the highest-performing categories.
+   - Only product categories ranked **1 to 10** were selected.
+
+2. **Sorting for Readability**:
+
+   - Results were ordered by **year** and then by **category rank**, ensuring a clear view of the highest-performing product categories each year.
 
 ## 4. Results
 
