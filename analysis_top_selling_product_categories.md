@@ -63,36 +63,43 @@ Using this table, bar charts were created for each year *(see Figure 2.0-2.2 in 
   <em>Figure 3: Top 10 Product Categories: Rank Changes (2016-2018)</em>
 </p>
 
-The analysis revealed the following top-selling product categories:
+The analysis of top-selling categories over the three-year period from 2016 to 2018 revealed several key trends, highlighting both consistent performers and shifting consumer preferences. It is important to note that the 2016 data covers only a partial year (September–December), and the 2018 data spans January–August. As a result, rank movements should be interpreted with caution. Nevertheless, the flow of ranks provides valuable insights into which categories demonstrated the strongest upward momentum and which ones struggled to maintain their top-10 status.  
 
-- **2016**: The top-selling categories were **Furniture & Decor**, **Health & Beauty**, and **Perfumery**. However, it is important to note that the 2016 data only includes orders from mid-September to December, as the order timestamps for earlier months in the year were not included in the original dataset. This results in a significantly lower number of orders made in the top 3 categories in 2016 (133 orders) compared to 2017 (13,140 orders) and 2018 (16,272 orders). As such, direct comparisons between 2016 and the other years should be made with caution, as the 2016 data may not fully represent an entire year's sales performance.
+Among the most notable findings was the consistent performance of certain categories that maintained their presence in the top 10 rankings throughout all three years. **Health & Beauty** emerged as a standout category, steadily climbing from **#3 in 2016 to #1 in 2018**, solidifying its position as the leading category. Similarly, **Watches & Gifts** demonstrated continuous improvement, rising from **#7 in 2016 to #2 in 2018**. **Sports & Leisure** also performed consistently well, peaking at **#3 in 2017** before settling at **#4 in 2018**. On the other hand, **Furniture & Decor**, which started as the **top category in 2016**, experienced a decline, dropping to **#7 in 2017 and remaining there in 2018**. These categories collectively demonstrated strong and sustained consumer demand over the period.  
 
-- **2017**: The top-selling categories were **Bed, Bath & Table**, **Furniture & Decor**, and **Sports & Leisure**.
+In addition to the consistent performers, several emerging categories entered the rankings in 2017 and showed strong growth potential. **Bed, Bath & Table** made a remarkable debut at **#1 in 2017**, before settling at **#3 in 2018**, signaling a growing consumer interest in home-related products. Similarly, **Computers & Accessories** and **Housewares** gained traction, ranking at **#5 and #10 in 2017**, respectively, with **Housewares** improving to **#6 in 2018**. These trends suggest a shift in consumer purchasing behavior, with increasing demand for home and tech-focused products.  
 
-- **2018**: The top-selling categories were **Health & Beauty**, **Bed, Bath & Table**, and **Computers & Accessories**. It is also important to mention that the 2018 data cuts off in August, meaning that the analysis for this year does not account for the full year’s worth of sales. This limitation may also impact the interpretation of the 2018 results.
+However, not all categories maintained their momentum. Some experienced significant declines or dropped out of the top 10 entirely. **Perfumery**, which ranked **#2 in 2016**, disappeared from the rankings in 2017 and 2018. Similarly, **Toys** declined from **#4 in 2016 to #8 in 2017** before falling out of the top 10 in 2018. Other categories, such as **Consoles & Games** and **Air Conditioning**, were present in the top 10 in 2016 but failed to reappear in subsequent years. Additionally, **Cool Stuff**, which entered the rankings at **#6 in 2017**, dropped to **#10 in 2018**, indicating diminishing popularity. These declines suggest potential market saturation or evolving consumer priorities.  
+
+The analysis also highlighted categories with fluctuating performance, reflecting seasonal demand or inconsistent growth. For example, **Automotive** ranked **#8 in 2016**, dropped out in 2017, and reappeared at **#8 in 2018**. Similarly, **Baby Products** followed a comparable pattern, ranking **#10 in 2016**, disappearing in 2017, and returning at **#9 in 2018**. **Garden & Tools** entered the rankings only in 2017 at **#9**, but did not appear in 2016 or 2018. These variations suggest niche or seasonal demand trends rather than sustained growth.  
+
+In summary, the analysis underscores several key takeaways. **Health & Beauty** and **Watches & Gifts** demonstrated the strongest and most consistent growth over the three-year period. Meanwhile, **Bed, Bath & Table** and **Computers & Accessories** emerged as significant growth categories, reflecting shifting consumer priorities toward home and tech products. On the other hand, categories like **Perfumery** and **Toys** experienced notable declines, likely due to market saturation or changing trends. Finally, the fluctuating performance of certain categories, such as **Automotive** and **Baby Products**, highlights the influence of seasonality or niche demand on consumer purchasing behavior.  
 
 Given these timestamp limitations, the results for 2016 and 2018 may not fully reflect trends for an entire year, and should be interpreted with this in mind.
 
-Category names in the dataset were originally formatted as `furniture_decor`, `health_beauty`, `perfumery`, `bed_bath_table`, `sports_leisure`, and `computers_accessories`, which were translated into user-friendly terms for clarity.
+Category names in the dataset were originally formatted as `furniture_decor`, `health_beauty`, `perfumery`, `bed_bath_table`, `sports_leisure`, and `computers_accessories`, which were translated into user-friendly terms for clarity.  
 
 ## 5. Visualisation
 
 <div style="text-align: center;">
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 1: Top Selling Product Categories per Year (2016-2018)</p>
     <img src="visuals/top_selling_categories.png" alt="Top Selling Product Categories per Year (2016-2018)" width="650"/>
-    <p style="margin-top: 5px; font-style: italic;">Figure 1: Top Selling Product Categories per Year (2016-2018)</p>
 </div>
 <br>
 
 <div style="text-align: center;">
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 2.0: Top 10 Product Categories by Revenue in 2016</p>
     <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650"/>
-    <p style="margin-top: 5px; font-style: italic;">Figure 2.0: Top 10 Product Categories by Revenue in 2016</p>
 </div>
 <br>
 
-<img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650">
-<em>Figure 2.1: Top 10 Product Categories by Revenue in 2017
+<div style="text-align: center;">
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 2.1: Top 10 Product Categories by Revenue in 2017</p>
+    <img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650"/>
+</div>
 <br>
 
-<img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650">  
-<em>Figure 2.2: Top 10 Product Categories by Revenue in 2018
-<br>
+<div style="text-align: center;">
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 2.2: Top 10 Product Categories by Revenue in 2018</p>
+    <img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650"/>
+</div>
