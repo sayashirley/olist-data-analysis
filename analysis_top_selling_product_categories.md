@@ -18,7 +18,7 @@ The analysis was conducted using SQL to organise data and provide the following 
   
 - Percentage contribution of the top 10 product categories to the total annual revenue, used for **descriptive statistics** and industry-relevant analysis. 
 
-Below, is a full breakdown of the SQL code used to return the top 10 product categories for each year. The full SQL code for this analysis can be found [here](link) and [here](link).
+Below, is a full breakdown of the SQL code used to return the top 10 product categories for each year. The full SQL code for this analysis can be found [here](sql_queries/top_selling_categories.sql) and [here](sql_queries/revenue_contribution_of_t10.sql).
 
 ### CTE 1: Calculating Revenue per Product Category by Year
 
@@ -110,7 +110,6 @@ Category names in the dataset were originally formatted as furniture_decor, heal
 ### Business Implications
 
 - Health & Beauty’s rise to #1 suggests strong consumer demand, making it a key category for promotional efforts and stock optimization.
-- The decline of Perfumery and Toys indicates shifting preferences, prompting a need for further investigation into market saturation or alternative product offerings.
 - The surge in Bed, Bath & Table in 2017 highlights growing interest in home-related products, suggesting potential for targeted marketing campaigns.
 
 
@@ -126,8 +125,8 @@ Given these timestamp limitations, the results for 2016 and 2018 may not fully r
 <br>
 
 <div style="text-align: center;">
-    <p style="margin-bottom: 5px; font-style: italic;">Figure 2: Revenue contribution of Top 10</p>
-    <img src="visuals/revenue contribution.png" alt="Revenue contribution of Top 10" width="650"/>
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 2: Revenue Contribution of Top 10</p>
+    <img src="visuals/revenue contribution.png" alt="Revenue Contribution of Top 10" width="650"/>
 </div>
 <br>
 
