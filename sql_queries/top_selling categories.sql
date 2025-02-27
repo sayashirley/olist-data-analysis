@@ -22,7 +22,7 @@ ranked_data AS (
     SELECT
         year,
         category_name_english,
-        CAST(ROUND(category_revenue, 0) AS INT64) AS category_revenue,
+        ROUND(category_revenue, 2) AS category_revenue,
         RANK() OVER (PARTITION BY year ORDER BY category_revenue DESC) AS category_rank
     FROM
         revenue_data
