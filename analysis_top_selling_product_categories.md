@@ -72,7 +72,7 @@ Using this table, bar charts were created for each year *(see Figure 2.0-2.2 in 
 <p align="center">
   <img src="visuals/rank_changes.png" alt="Top 10 Product Categories: Rank Changes (2016-2018)" width="650">
   <br>
-  <em>Figure 3: Top 10 Product Categories: Rank Changes (2016-2018)</em>
+  <em>Figure 4: Top 10 Product Categories: Rank Changes (2016-2018)</em>
 </p>
 
 The analysis of top-selling product categories over the three-year period from 2016 to 2018 revealed several key trends, highlighting both consistent performers and shifting consumer preferences. It provides valuable insights into which categories demonstrated growth and which ones struggled to maintain their top placements.  
@@ -126,18 +126,24 @@ Given these timestamp limitations, the results for 2016 and 2018 may not fully r
 <br>
 
 <div style="text-align: center;">
-    <p style="margin-bottom: 5px; font-style: italic;">Figure 2.0: Top 10 Product Categories by Revenue in 2016</p>
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 2: Revenue contribution of Top 10</p>
+    <img src="visuals/revenue contribution.png" alt="Revenue contribution of Top 10" width="650"/>
+</div>
+<br>
+
+<div style="text-align: center;">
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 3.0: Top 10 Product Categories by Revenue in 2016</p>
     <img src="visuals/top_10_2016.png" alt="Top 10 Product Categories by Revenue in 2016" width="650"/>
 </div>
 <br>
 
 <div style="text-align: center;">
-    <p style="margin-bottom: 5px; font-style: italic;">Figure 2.1: Top 10 Product Categories by Revenue in 2017</p>
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 3.1: Top 10 Product Categories by Revenue in 2017</p>
     <img src="visuals/top_10_2017.png" alt="Top 10 Product Categories by Revenue in 2017" width="650"/>
 </div>
 <br>
 
 <div style="text-align: center;">
-    <p style="margin-bottom: 5px; font-style: italic;">Figure 2.2: Top 10 Product Categories by Revenue in 2018</p>
+    <p style="margin-bottom: 5px; font-style: italic;">Figure 3.2: Top 10 Product Categories by Revenue in 2018</p>
     <img src="visuals/top_10_2018.png" alt="Top 10 Product Categories by Revenue in 2018" width="650"/>
 </div>
