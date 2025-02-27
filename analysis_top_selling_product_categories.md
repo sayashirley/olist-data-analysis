@@ -18,7 +18,7 @@ The analysis was conducted using SQL to organise data and provide the following 
   
 - Percentage contribution of the top 10 product categories to the total annual revenue, used for **descriptive statistics** and industry-relevant analysis. 
 
-Below, is a full breakdown of the SQL code used to return the top 10 product categories for each year. The full SQL code for this analysis can be found [here](sql_queries/top_selling_categories.sql) and [here](sql_queries/revenue_contribution_of_t10.sql).
+Below, is a full breakdown of the SQL code used to return the top 10 product categories for each year. The full SQL code for this analysis can be found [here](sql_queries/top_selling_categories.sql) and [here](sql_queries/revenue_contribution.sql).
 
 ### CTE 1: Calculating Revenue per Product Category by Year
 
