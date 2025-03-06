@@ -18,7 +18,7 @@ The analysis was conducted using SQL to organise data and provide the following 
   
 - Percentage contribution of the top 10 product categories to the total annual revenue, used for **descriptive statistics** and industry-relevant analysis. 
 
-Below, is a full breakdown of the SQL code used to return the top 10 product categories for each year. The full SQL code for this analysis can be found [here](sql_queries/top_selling_categories.sql) and [here](sql_queries/revenue_contribution.sql).
+Below, is a full breakdown of the SQL code used to return the top 10 product categories for each year. The full SQL code used to conduct this analysis can be found [here](sql_queries/top_selling_categories.sql) and [here](sql_queries/revenue_contribution.sql).
 
 ### CTE 1: Calculating Revenue per Product Category by Year
 
@@ -67,7 +67,7 @@ The final query retrieved the **top 10 product categories per year** based on re
 ## 4. Results
 
 The query returned the top 10 product categories with the highest aggregate revenue for each year between 2016 and 2018 respectively. *(see Figure 1 in Section 5: Visualisations)*
-Using this table, bar charts were created for each year *(see Figure 2.0-2.2 in Section 5: Visualisations)*, as well as the following ribbon chart visualising rank changes and trends during this period. 
+Using this table, a bar chart was created to visualise  each year *(see Figure 2.0-2.2 in Section 5: Visualisations)*, as well as the following ribbon chart visualising rank changes and trends during this period. 
 
 <p align="center">
   <img src="visuals/rank_changes.png" alt="Top 10 Product Categories: Rank Changes (2016-2018)" width="650">
