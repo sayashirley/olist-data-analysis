@@ -66,16 +66,28 @@ The final query retrieved the **top 10 product categories per year** based on re
 
 ## 4. Results
 
-The query returned the top 10 product categories with the highest aggregate revenue for each year between 2016 and 2018 respectively. *(see Figure 1 in Section 5: Visualisations)*
-Using this table, a bar chart was created to visualise  each year *(see Figure 2.0-2.2 in Section 5: Visualisations)*, as well as the following ribbon chart visualising rank changes and trends during this period. 
+The query returned the top 10 product categories with the highest aggregate revenue for each year between 2016 and 2018 respectively (see Figure 1 in Section 5: Visualisations).
+Using this data, I created an interactive bar chart, with the help of a slicer to focus on one year at a time (see Figure 2.0-2.2 in Section 5: Visualisations for static graphs).
 
+<br>
+<p align="center">
+  <img src="visuals/pbi_pres.gif" alt="Power BI Tooltip Demo" width="650">
+  <br>
+  <em>Figure 4: Top 10 Product Categories: Rank Changes (2016-2018)</em>
+</p>
+<br>
+
+The following ribbon chart was created to provide an overview of rank development and trends of the top 10 product categories over the three year period. 
+
+<br>
 <p align="center">
   <img src="visuals/rank_changes.png" alt="Top 10 Product Categories: Rank Changes (2016-2018)" width="650">
   <br>
   <em>Figure 4: Top 10 Product Categories: Rank Changes (2016-2018)</em>
 </p>
+<br>
 
-The analysis of top-selling product categories over the three-year period from 2016 to 2018 revealed several key trends, highlighting both consistent performers and shifting consumer preferences. It provides valuable insights into which categories demonstrated growth and which ones struggled to maintain their top placements.  
+The analysis of top-selling product categories revealed several key trends, highlighting both consistent performers and shifting consumer preferences. It provides valuable insights into which categories demonstrated growth and which ones struggled to maintain their top placements.  
 
 Among the most notable findings was the consistent performance of certain categories that maintained their presence in the top 10 rankings throughout all three years. **Health & Beauty** emerged as a standout category, steadily climbing from **#3 in 2016 to #1 in 2018**. Similarly, **Watches & Gifts** demonstrated continuous improvement, rising from **#7 in 2016 to #2 in 2018**. **Sports & Leisure** also performed consistently well, peaking at **#3 in 2017**. On the other hand, **Furniture & Decor**, which started as the **top category in 2016**, experienced a decline, dropping to **#7 in 2017 and remaining there in 2018**. These categories collectively demonstrated strong and sustained consumer demand over the period.  
 
