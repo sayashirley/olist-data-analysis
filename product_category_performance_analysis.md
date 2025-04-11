@@ -107,26 +107,13 @@ The results show that the top 10 categories accounted for 72.26% of total revenu
 
 Growth Trends: The aggregate revenue of the top 10 categories was R$40,843.55 in 2016, R$4,489,034.04 in 2017, and R$5,469,522.96 in 2018, demonstrating a sharp increase. This suggests that while rankings shifted, overall revenue expanded significantly.
 
-Data Limitations: The observed revenue gap between 2016 and subsequent years was due to partial data coverage (2016: Sept-Dec, 2018: Jan-Aug). This discrepancy was confirmed by analyzing order volume and timestamps, emphasizing the need to interpret revenue trends cautiously.
-
-The analysis of top-selling product categories over the three-year period from 2016 to 2018 revealed several key trends, highlighting both consistent performers and shifting consumer preferences.
-
-Among the most notable findings was the consistent performance of certain categories that maintained their presence in the top 10 rankings throughout all three years. Health & Beauty emerged as a standout category, steadily climbing from #3 in 2016 to #1 in 2018, solidifying its position as the leading category. Similarly, Watches & Gifts demonstrated continuous improvement, rising from #7 in 2016 to #2 in 2018. Sports & Leisure also performed consistently well, peaking at #3 in 2017 before settling at #4 in 2018. On the other hand, Furniture & Decor, which started as the top category in 2016, experienced a decline, dropping to #7 in 2017 and remaining there in 2018. These categories collectively demonstrated strong and sustained consumer demand over the period.
-
-In summary, the analysis underscores several key takeaways. Health & Beauty and Watches & Gifts demonstrated the strongest and most consistent growth over the three-year period. Meanwhile, Bed, Bath & Table and Computers & Accessories emerged as significant growth categories, reflecting shifting consumer priorities toward home and tech products. On the other hand, categories like Perfumery and Toys experienced notable declines, likely due to market saturation or changing trends. Finally, the fluctuating performance of certain categories, such as Automotive and Baby Products, suggests niche demand on consumer purchasing behavior.
-
-Given these timestamp limitations, the results for 2016 and 2018 may not fully reflect trends for an entire year, and should be interpreted with this in mind.
-
-Category names in the dataset were originally formatted as furniture_decor, health_beauty, perfumery, bed_bath_table, sports_leisure, and computers_accessories, which were translated into user-friendly terms for clarity.
+Data Limitations: The observed revenue gap between 2016 and subsequent years was due to partial data coverage (2016: Sept-Dec, 2018: Jan-Aug). This discrepancy was confirmed by analysing order volume and timestamps. As a result, rank movements should be interpreted with caution.
 
 ### Business Implications
 
-- Health & Beauty’s rise to #1 suggests strong consumer demand, making it a key category for promotional efforts and stock optimization.
+- Health & Beauty’s rise to #1 suggests strong consumer demand, making it a key category for promotional efforts and stock optimisation.
 - The surge in Bed, Bath & Table in 2017 highlights growing interest in home-related products, suggesting potential for targeted marketing campaigns.
 
-
-It is important to note, however, that the 2016 data covers only a partial year (September–December), and the 2018 data spans January–August. As a result, rank movements should be interpreted with caution. Nevertheless, the flow of ranks 
-Given these timestamp limitations, the results for 2016 and 2018 may not fully reflect trends for an entire year, and should be interpreted with this in mind.
 
 ## 5. Visualisation
 
