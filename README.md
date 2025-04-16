@@ -2,10 +2,10 @@
 
 Olist is a leading Brazilian e-commerce platform that connects small and medium-sized businesses to customers across the country. It operates as a marketplace, enabling sellers to list their products and manage orders efficiently. Olist’s extensive database includes information on customer orders, product categories, seller performance, delivery times, and customer reviews, making it a rich source of data for analysing e-commerce trends and operational efficiency.
 
-The goal of this project is to leverage Olist’s data to analyze two critical aspects of its business:
+The goal of this project is to leverage Olist’s data to analyse two critical aspects of its business:
 
 1. **Product Category Performance**: Identify top-selling product categories, analyse sales trends, and understand customer purchasing behaviour to uncover opportunities for growth and optimisation.
-2. **Delivery Performance**: Evaluate delivery times, identify bottlenecks in the delivery process, and assess the impact of delivery efficiency on customer satisfaction and repeat purchases.
+2. **Delivery Performance**: Evaluate delivery times, identify bottlenecks in the delivery process, and observe the correlation of delivery efficiency on customer satisfaction and repeat purchases.
 
 By combining insights from both analyses, this project aims to provide actionable recommendations to optimise product offerings, improve delivery operations, and enhance the overall customer experience on Olist.
 
@@ -104,6 +104,3 @@ The next phase of this project will involve analysing delivery times to understa
 
 ## Conclusion
 This project aims to provide valuable insights into product category performance and delivery times, which can inform strategic decisions for Olist. As the analysis continues, additional insights and recommendations will be added to enhance the overall impact of this project.
-
-## Sources 
-Region mapping is based on [ISO](https://www.iso.org/obp/ui/#iso:code:3166:BR) 
